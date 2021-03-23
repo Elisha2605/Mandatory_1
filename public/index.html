@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node.js</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="/static/css/index.css">
+</head>
+<body>
+
+    <div class="btn">
+        <span class="fas fa-bars"></span>
+    </div>
+
+    <nav class="sidebar">
+        <div class="text">Side Menu</div>
+        <ul>
+            <li><a href="/" class="active nav__link" data-link>Hello</a></li>
+            <!-- <li>
+                <a href="#" class="feat-btn nav__link">Intro to Node.js
+                <span class="fas fa-caret-down first"></span>
+                </a>
+                <ul class="feat-show">
+                    <li><a href="/posts" class="nav__link" data-link>Pages</a></li>
+                    <li><a href="/settings" class="nav__link" data-link>Elements</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#" class="serv-btn nav__link">JS Data types
+                <span class="fas fa-caret-down second"></span>
+                </a>
+                <ul class="serv-show">
+                    <li><a href="#" class="nav__link">App Design</a></li>
+                    <li><a href="#" class="nav__link">Web Design</a></li>
+                </ul>
+            </li> -->
+            <li><a href="/intro" class="nav__link" data-link>Intro</a></li>
+            <li class="maring"><a href="/jsdatatype" class="nav__link" data-link>Js Data type</a></li>
+            <li><a href="/jsfunctions" class="nav__link"data-link>JS Functions</a></li>
+            <li><a href="/express" class="nav__link" data-link>Express</a></li>
+            <li><a href="/restful" class="nav__link" data-link>RESTful API</a></li>
+        </ul>
+    </nav>
+    <!-- <div class="content">
+        <div class="header">Sidebar Menu with sub-menu</div>
+        <p>HTML CSS & Javascript (Full Tutorial)</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit nostrum, 
+            delectus quis nihil assumenda corporis non, commodi, vitae neque quisquam 
+            dolores porro magnam! Aspernatur minima sapiente rem autem officiis dolorum?</p>
+    </div> -->
+
+    <div id="app"></div>
+    <script type="module" src="/static/js/index.js"></script>
+  <script>
+      $('.btn').click(function(){
+        $(this).toggleClass("click");
+        $('.sidebar').toggleClass("show");
+      });
+        $('.feat-btn').click(function(){
+          $('nav ul .feat-show').toggleClass("show");
+          $('nav ul .first').toggleClass("rotate");
+        });
+        $('.serv-btn').click(function(){
+          $('nav ul .serv-show').toggleClass("show1");
+          $('nav ul .second').toggleClass("rotate");
+        });
+        $('nav ul li').click(function(){
+          $(this).addClass("active").siblings().removeClass("active");
+        });
+      </script>
+  
+    </body>
+  </html>
+  
+
+
+<!-- <nav class="nav">
+        <a href="/" class="nav__link" data-link>Dashboard</a>
+        <a href="/posts" class="nav__link" data-link>Posts</a>
+        <a href="/settings" class="nav__link" data-link>Settings</a>
+</nav> -->
