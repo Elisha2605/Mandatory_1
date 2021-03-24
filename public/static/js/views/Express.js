@@ -28,7 +28,7 @@ export default class extends AbstractView {
             <h2>How to use Express?</h2>
 
             <p>
-            First we are going to have to create a packge.json file
+            First we are going to create a packge.json file
             a package.json file can be described as a manifest of 
             your project that includes the packages and applications 
             it depends on, information about its unique source control, 
@@ -36,16 +36,18 @@ export default class extends AbstractView {
             author.
             </p>
 
+            <img src="/images/express/exp4.png" alt="" width="500px">
+
             <b><p>Now we are going to type "npm init" command as shown below:</p></b>
             
-            <img src="/images/express/exp1.png" alt="" width="300px">
+            <img src="/images/express/exp1.png" alt="" width="200px">
             <p>
             The npm init command helps to initialize your Project.
             </p>
 
             <b><p>Next step is to install express itself by using following commands:</p></b>
 
-            <img src="/images/express/exp2.png" alt="" width="400px">
+            <img src="/images/express/exp2.png" alt="" width="300px">
 
             <p>
             The above commands will install express in your project and add a 
@@ -67,7 +69,7 @@ export default class extends AbstractView {
 
             <b><p>After creating app.js you will have to import/require express to you file as following:</p></b>
 
-            <img src="/images/express/exp3.png" alt="" width="600px">
+            <img src="/images/express/exp3.png" alt="" width="450px">
 
             <p>
             And now you can enjoy and use express as you wish. Isn’t great?

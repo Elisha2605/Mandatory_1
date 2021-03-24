@@ -1,3 +1,4 @@
+import Bonus from "./views/Bonus.js";
 import Express from "./views/Express.js";
 import Hi from "./views/Hi.js";
 import Intro from "./views/Intro.js";
@@ -21,6 +22,7 @@ const router = async () => {
         { path: "/jsfunctions", view: JsFunctions },
         { path: "/express", view: Express },
         { path: "/restful", view: RESTfulApi },
+        { path: "/bonus", view: Bonus }
     ];   
 
     // Test each route for potential match

@@ -11,7 +11,7 @@ export default class extends AbstractView {
         return `
         <h1>JavaScript data type</h1>
         <p>
-        <b>In JavaScript, there are 6 data types defined. There are Primitives data type and Object.</b> 
+        <b>In JavaScript, there are 6 data types defined.</b> 
         </p>
 
         <style>
@@ -59,7 +59,7 @@ export default class extends AbstractView {
         <tr>
             <td>Number</td>
             <td>an integer or  a floating-point number</td>
-            <td>3, 432.45.</td>        
+            <td>3,&nbsp &nbsp432,45</td>        
         </tr>
         <tr>
             <td>Boolean</td>
@@ -100,8 +100,8 @@ export default class extends AbstractView {
         <img src="/images/jsDataType/dat2.png" alt="" width="500px">
         
         <p>
-        An object in JavaScript is a list of “name:value” pairs inside curly braces. In this case 
-        “person” is a value and “firstName, lastName and age” are values.
+        An object in JavaScript is a list of "key:value” pairs inside curly braces. In this case 
+        “firstName, lastName and age” are keys and "Napster, Hansen and 50" are values.
         </p>
         `;
     }

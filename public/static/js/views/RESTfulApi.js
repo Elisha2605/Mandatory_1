@@ -128,6 +128,77 @@ export default class extends AbstractView {
             <img src="/images/restfulApi/rest7.png" alt="" width="250px">
 
             <p>
+            We can also run our application in a specified environment 
+            by using environment variables.
+            </p>
+
+            <h2>What are environment variables?</h2>
+
+            <p>
+            Environment variables allow our app to behave differently based on 
+            the environment we want them to run in. We can use environment variables 
+            wherever our app needs configuration. 
+            </p>
+
+            <p>
+            the following example will show us how 
+            to use an environment variable.
+            First we need to install cross-env.
+            </p>
+
+            <h2>cross-env.</h2>
+
+            <p>
+            Cross-env it’s one of the npm packages and helps us to have a single 
+            command without worrying about setting or using the environment variable 
+            properly. To install cross-env we need to use the following command:
+            </p>
+
+            <img src="/images/restfulApi/rest11.png" alt="" width="400px">
+
+            <p>
+            And cross-env will be installed and saved in node_modules. 
+            </p>
+
+            <p>
+            Next thing to do is to go to our package.json file and set our 
+            environment variable in our npm script as shown bellow:
+            </p>
+
+            <img src="/images/restfulApi/rest12.png" alt="" width="500px">
+
+            <p>
+            Here we are simply passing the port into our code by using the 
+            command line. We are indicating the name of the variable, followed 
+            by the equal sign, and then the value (3000). Then we invoke our 
+            node.js app.
+            </p>
+
+            <p>
+            Next thing to do is to go to our app.js and inject our env. variable 
+            as following:
+            </p>
+
+            <img src="/images/restfulApi/rest13.png" alt="" width="550px">
+
+            <p>
+            Here we are passing our evn. variable (3000) to PORT only if defined, 
+            otherwise use the default PORT which in our case is 8080.
+            </p>
+
+            <p>
+            Now we can run the following command to start our server on port 3000:
+            </p>
+
+            <img src="/images/restfulApi/rest14.png" alt="" width="300px">
+
+            <p>
+            And now we can see that our server is running on port 3000
+            </p>
+
+            <img src="/images/restfulApi/rest15.png" alt="" width="550px"><br><br>
+
+            <p>
             I suppose now you would like to see the result on our client endpoint. 
             Now that we have setted up our router we can either use our browser or 
             Postman to get our data by using the “<b>http://localhost:8080/student</b>”. 
